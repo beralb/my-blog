@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+This Post Title
+{% endblock  %}
+
+{% block css_files %}
+<link rel="stylesheet" href="{% static "blog/post-detail.css" %}">
+{% endblock  %}
+
+{% block content %}
+  <section id="summary">
+    <h2>Post Title</h2>
+    <article>
+      <img src="{% static "blog/images/mountains.jpg" %}" alt="Post Title">
+      <address>By Jean</address>
+      <div>
+        Last updated on <time>March 01st 22</time>
+      </div>
+    </article>
+  </section>
+
+  <main>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt consequatur beatae praesentium at neque dicta nostrum id impedit, aut, non velit suscipit ullam tenetur. Vitae consequatur dolor magnam nesciunt est?  
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, dignissimos quibusdam? Nihil omnis inventore aliquid commodi voluptatibus autem repudiandae, maiores nulla, earum ex ab, eligendi non veniam eius sequi exercitationem.  
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, eveniet at. Voluptas, adipisci? Consequatur perspiciatis amet inventore accusamus aut adipisci quidem! Soluta, earum. Mollitia, tenetur odio! Animi inventore temporibus harum!  
+    </p>
+  </main>
+{% endblock %}

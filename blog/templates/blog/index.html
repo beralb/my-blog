@@ -25,7 +25,9 @@ My Blog
     <h2>My Latest Thoughts</h2>
 
     <ul>
-      {% include "blog/includes/post.html" %}
+      {% for post in posts %}
+        {% include "blog/includes/post.html" %}
+      {% endfor %}
     </ul>
   </section>
 
@@ -35,7 +37,7 @@ My Blog
       I love programming, I love to help others and I enjoy exploring new technologies in general!
     </p>
     <p>
-      My goal is to keep on going as a developer and if I could help you do the same, I be happy
+      My goal is to keep on going as a developer and if I could help you do the same, I'll be happy
     </p>
   </section>
 {% endblock %}
